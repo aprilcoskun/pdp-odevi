@@ -1,0 +1,31 @@
+<resources>
+    <!-- bunların hepsi burda çünkü best practice-->
+
+    <string name="app_name">alperen_coskun</string>
+    <string name="welcome">Hoşgeldiniz</string>
+    <string name="fname">Adınız</string>
+    <string name="lname">Soyadınız</string>
+    <string name="number">Okul Numaranız</string>
+    <string name="secondpage">İKİNCİ SAYFA</string>
+    <string name="gender">Cinsiyet</string>
+    <string name="male">Erkek</string>
+    <string name="female">Kadın</string>
+    <string name="thirdpage">ÜÇÜNCÜ SAYFA</string>
+    <string name="whichlangs">Bildiğiniz Programlama Dilleri</string>
+    <string name="lastpage">SON SAYFA</string>
+    <string name="info">Bilgileriniz</string>
+
+    <string-array name="diller">
+        <item>C++</item>
+        <item>Java</item>
+        <item>Javascript</item>
+        <item>Python</item>
+        <item>Scala</item>
+        <item>C#</item>
+        <item>PHP</item>
+        <item>Ruby</item>
+        <item>Go</item>
+        <item>Clojure</item>
+        <item>Swift</item>
+    </string-array>
+</resources>
