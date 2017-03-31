@@ -24,9 +24,10 @@ public class ThirdActivity extends Activity {
         setContentView(R.layout.activity_third);
         CAsharedPref =   new SharedPref(getApplicationContext());
         CAcheckedlangs =   new ArrayList<>();
+
         //ui setup
 
-        setTitle("Üçüncü Sayfa");
+        setTitle(R.string.thirdpage);
         CAlanglist =   (ListView)findViewById(R.id.langs);
         CAlastpage =   (Button)findViewById(R.id.button3);
 

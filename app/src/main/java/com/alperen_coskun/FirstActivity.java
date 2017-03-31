@@ -26,11 +26,13 @@ public class FirstActivity extends Activity {
 
         //ui setup
 
-        setTitle("Birinci Sayfa");
+        setTitle(R.string.firstpage);
         CAfname     =   (EditText)findViewById(R.id.fnameEdit);
         CAlname     =   (EditText)findViewById(R.id.lnameEdit);
         CAnumber    =   (EditText)findViewById(R.id.numberEdit);
         CAsecondpage =   (Button)findViewById(R.id.button);
+
+        //on girdi
 
         if(!CAsharedPref.loadFName().equals("default"))
             CAfname.setText(CAsharedPref.loadFName());

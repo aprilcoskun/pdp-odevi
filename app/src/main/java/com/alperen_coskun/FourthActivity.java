@@ -3,6 +3,7 @@ package com.alperen_coskun;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.method.ScrollingMovementMethod;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -21,7 +22,7 @@ public class FourthActivity extends Activity {
 
         //ui setup
 
-        setTitle("Dördüncü Sayfa");
+        setTitle(R.string.lastpage);
         CAfirstdata = (TextView)findViewById(R.id.ilksayfa);
         CAseconddata = (TextView)findViewById(R.id.ikincisayfa);
         CAthirddata = (TextView)findViewById(R.id.ucuncusayfa);
@@ -31,9 +32,11 @@ public class FourthActivity extends Activity {
         CAthirdpage = (ImageView)findViewById(R.id.imageView3);
 
         CAfirstdata.setText("\n "+ CAsharedPref.loadFName()+" "+ CAsharedPref.loadLName()+"\n\n "+ CAsharedPref.loadNumber()+" \n");
-        CAseconddata.setText(CAsharedPref.loadGender());
+        CAseconddata.setText("\n"+CAsharedPref.loadGender()+"\n");
         CAthirddata.setText(CAsharedPref.loadLangs());
 
+        //hepsini secerse kaydir
+        CAthirddata.setMovementMethod(new ScrollingMovementMethod());
 
 
         //listeners

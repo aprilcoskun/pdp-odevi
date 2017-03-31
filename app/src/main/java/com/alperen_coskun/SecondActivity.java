@@ -23,11 +23,13 @@ public class SecondActivity extends Activity {
 
         //ui setup
 
-        setTitle("İkinci Sayfa");
+        setTitle(R.string.secondpage);
         CAgender    =   (RadioGroup)findViewById(R.id.cinsiyet);
         CAthirdpage =   (Button)findViewById(R.id.button2);
 
-        if(CAsharedPref.loadGender().equals("Erkek")) {
+        //on secim
+
+        if(CAsharedPref.loadGender().equals(getResources().getString(R.string.male))) {
             CAgender.check(R.id.erkek);
         } else {
             CAgender.check(R.id.kadin);
@@ -39,7 +41,7 @@ public class SecondActivity extends Activity {
             @Override
             public void onClick(View v) {
                 CAselectedgender = (RadioButton) findViewById(CAgender.getCheckedRadioButtonId());
-                CAsharedPref.saveGender("\n "+ CAselectedgender.getText().toString()+" \n");
+                CAsharedPref.saveGender(CAselectedgender.getText().toString());
                 //String ACveriler = getIntent().getStringExtra("veriler")+"\n"+ CAsharedPref.Loadgender();
                 //Toast.makeText(SecondActivity.this,ACveriler,Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(SecondActivity.this,ThirdActivity.class);
