@@ -11,7 +11,7 @@
     tools:context="com.alperen_coskun.FourthActivity">
 
     <TextView
-        android:text="Bilgileriniz"
+        android:text="@string/info"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -20,7 +20,7 @@
         android:textAppearance="@android:style/TextAppearance.Material.Headline" />
 
     <TextView
-        android:text="İlk Sayfa"
+        android:text="@string/firstpage"
         android:textColor="#000000"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -49,7 +49,7 @@
         android:layout_marginTop="2dp" />
 
     <TextView
-        android:text="İkinci Sayfa"
+        android:text="@string/secondpage"
         android:textColor="#000000"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -78,7 +78,7 @@
         android:textSize="16sp" />
 
     <TextView
-        android:text="Üçüncü Sayfa"
+        android:text="@string/thirdpage"
         android:textColor="#000000"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -103,7 +103,10 @@
         android:background="@drawable/customtextbox"
         android:layout_below="@+id/imageView3"
         android:layout_marginTop="2dp"
-        android:textSize="16sp" />
+        android:textSize="16sp"
+        android:scrollbars="vertical"
+        android:maxLines="20"
+        />
 
 
 

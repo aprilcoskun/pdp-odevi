@@ -27,7 +27,7 @@ public class SecondActivity extends Activity {
         CAgender    =   (RadioGroup)findViewById(R.id.cinsiyet);
         CAthirdpage =   (Button)findViewById(R.id.button2);
 
-        if(CAsharedPref.loadGender().equals("Erkek")) {
+        if(CAsharedPref.loadGender().equals("\n Erkek \n")) {
             CAgender.check(R.id.erkek);
         } else {
             CAgender.check(R.id.kadin);

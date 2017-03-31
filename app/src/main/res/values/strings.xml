@@ -3,6 +3,7 @@
 
     <string name="app_name">alperen_coskun</string>
     <string name="welcome">Hoşgeldiniz</string>
+    <string name="firstpage">İLK SAYFA</string>
     <string name="fname">Adınız</string>
     <string name="lname">Soyadınız</string>
     <string name="number">Okul Numaranız</string>

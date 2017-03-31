@@ -11,26 +11,17 @@
     tools:context="com.alperen_coskun.ThirdActivity">
 
     <TextView
-        android:text="Bildiğiniz Diller"
+        android:text="@string/whichlangs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:id="@+id/textView3"
         android:textAppearance="@android:style/TextAppearance.Material.Title"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:textSize="20sp" />
 
-    <Button
-        android:text="Son Sayfa"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/button3"
-        android:layout_alignParentBottom="true"
-        android:layout_toEndOf="@+id/textView3"
-        android:layout_marginBottom="30dp"
-        style="@android:style/Widget.Material.Button"
-        android:elevation="0dp" />
+
 
     <ListView
         android:layout_width="match_parent"
@@ -39,7 +30,20 @@
         android:id="@+id/langs"
         android:layout_centerVertical="true"
         android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView3"
         android:layout_above="@+id/button3"
         style="@android:style/Widget.Material.ListView" />
+
+    <Button
+        android:text="@string/lastpage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button3"
+        android:layout_marginBottom="32dp"
+
+        style="@android:style/Widget.Material.Button"
+        android:elevation="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>

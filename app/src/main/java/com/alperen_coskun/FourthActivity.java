@@ -3,6 +3,7 @@ package com.alperen_coskun;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.method.ScrollingMovementMethod;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -34,6 +35,8 @@ public class FourthActivity extends Activity {
         CAseconddata.setText(CAsharedPref.loadGender());
         CAthirddata.setText(CAsharedPref.loadLangs());
 
+        //hepsini secerse kaydir
+        CAthirddata.setMovementMethod(new ScrollingMovementMethod());
 
 
         //listeners
