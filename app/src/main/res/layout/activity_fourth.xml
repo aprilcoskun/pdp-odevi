@@ -26,7 +26,7 @@
         android:id="@+id/ilksayfa"
         android:background="@drawable/customtextbox"
         android:textSize="18sp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="32dp"
         android:layout_below="@+id/textView5"
         android:layout_alignParentStart="true" />
 
