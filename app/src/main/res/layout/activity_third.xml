@@ -31,6 +31,7 @@
         android:layout_centerVertical="true"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/textView3"
+        android:layout_marginTop="8dp"
         android:layout_above="@+id/button3"
         style="@android:style/Widget.Material.ListView" />
 
@@ -44,6 +45,7 @@
         style="@android:style/Widget.Material.Button"
         android:elevation="0dp"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:textColor="#FFFFFFFF"/>
 
 </RelativeLayout>

@@ -49,6 +49,7 @@
         android:id="@+id/button2"
         style="@android:style/Widget.Material.Button"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:textColor="#FFFFFFFF"/>
 
 </RelativeLayout>

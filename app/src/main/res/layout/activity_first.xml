@@ -32,7 +32,8 @@
         android:id="@+id/fnameEdit"
         android:layout_centerHorizontal="true"
         android:hint="@string/fname"
-        app:met_floatingLabel="normal" />
+        app:met_floatingLabel="normal"
+        app:met_primaryColor="#2196f3"/>
 
     <com.rengwuxian.materialedittext.MaterialEditText
         android:layout_width="wrap_content"
@@ -45,7 +46,7 @@
         android:layout_alignStart="@+id/fnameEdit"
         android:hint="@string/lname"
         app:met_floatingLabel="normal"
-        />
+        app:met_primaryColor="#2196f3"/>
 
     <com.rengwuxian.materialedittext.MaterialEditText
         android:layout_width="wrap_content"
@@ -57,17 +58,19 @@
         android:layout_below="@+id/lnameEdit"
         android:layout_alignStart="@+id/lnameEdit"
         android:hint="@string/number"
-        app:met_floatingLabel="normal"/>
+        app:met_floatingLabel="normal"
+        app:met_primaryColor="#2196f3"/>
 
     <Button
-        android:text="@string/secondpage"
+        android:id="@+id/button"
+        style="@android:style/Widget.Material.Light.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="39dp"
-        android:id="@+id/button"
-        style="@android:style/Widget.Material.Button"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="39dp"
+        android:text="@string/secondpage"
+        android:textColor="#FFFFFFFF"/>
 
 
 </RelativeLayout>
