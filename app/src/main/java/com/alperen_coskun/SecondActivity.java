@@ -27,7 +27,7 @@ public class SecondActivity extends Activity {
         CAgender    =   (RadioGroup)findViewById(R.id.cinsiyet);
         CAthirdpage =   (Button)findViewById(R.id.button2);
 
-        //on secim
+        //check db
 
         if(CAsharedPref.loadGender().equals(getResources().getString(R.string.male))) {
             CAgender.check(R.id.erkek);

@@ -33,21 +33,37 @@ public class ThirdActivity extends Activity {
 
 
         //list setup
+
         String[] AClangs =   getResources().getStringArray(R.array.diller);
         ArrayAdapter<String> CA_adapter = new ArrayAdapter<String>(this, R.layout.listlayout,R.id.row, AClangs);
         CAlanglist.setAdapter(CA_adapter);
+
+
+        //check db
+
+        for (String ACitem: AClangs) {
+            if(CAsharedPref.loadLangs().contains(ACitem)) {
+                //CAcheckedlangs.add(CA_adapter.getView(CA_adapter.getPosition(ACitem)));
+                CAlanglist.setItemChecked(CA_adapter.getPosition(ACitem),true);
+                if (CAcheckedlangs.contains(ACitem)) {
+                    CAcheckedlangs.remove(ACitem);
+                } else {
+                    CAcheckedlangs.add(ACitem);
+                }
+            }
+        }
 
         //listeners
 
         CAlanglist.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                String AC_secilidil =((TextView)view).getText().toString();
-                if(CAcheckedlangs.contains(AC_secilidil)){
-                    CAcheckedlangs.remove(AC_secilidil);
+                String ACselectedlang =((TextView)view).getText().toString();
+                if(CAcheckedlangs.contains(ACselectedlang)){
+                    CAcheckedlangs.remove(ACselectedlang);
                 }
                 else {
-                    CAcheckedlangs.add(AC_secilidil);
+                    CAcheckedlangs.add(ACselectedlang);
                 }
             }
         });

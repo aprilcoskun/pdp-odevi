@@ -31,11 +31,14 @@ public class FourthActivity extends Activity {
         CAsecondpage = (ImageView)findViewById(R.id.imageView2);
         CAthirdpage = (ImageView)findViewById(R.id.imageView3);
 
+        //check db
+
         CAfirstdata.setText("\n "+ CAsharedPref.loadFName()+" "+ CAsharedPref.loadLName()+"\n\n "+ CAsharedPref.loadNumber()+" \n");
         CAseconddata.setText("\n"+CAsharedPref.loadGender()+"\n");
         CAthirddata.setText(CAsharedPref.loadLangs());
 
-        //hepsini secerse kaydir
+        //scroll method for long lang list
+
         CAthirddata.setMovementMethod(new ScrollingMovementMethod());
 
 

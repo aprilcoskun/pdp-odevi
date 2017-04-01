@@ -32,7 +32,7 @@ public class FirstActivity extends Activity {
         CAnumber    =   (EditText)findViewById(R.id.numberEdit);
         CAsecondpage =   (Button)findViewById(R.id.button);
 
-        //on girdi
+        //check db
 
         if(!CAsharedPref.loadFName().equals("default"))
             CAfname.setText(CAsharedPref.loadFName());
