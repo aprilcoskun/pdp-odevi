@@ -43,7 +43,6 @@ public class ThirdActivity extends Activity {
 
         for (String ACitem: AClangs) {
             if(CAsharedPref.loadLangs().contains(ACitem)) {
-                //CAcheckedlangs.add(CA_adapter.getView(CA_adapter.getPosition(ACitem)));
                 CAlanglist.setItemChecked(CA_adapter.getPosition(ACitem),true);
                 if (CAcheckedlangs.contains(ACitem)) {
                     CAcheckedlangs.remove(ACitem);

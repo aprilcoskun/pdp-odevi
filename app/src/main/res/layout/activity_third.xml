@@ -32,7 +32,7 @@
         android:layout_centerVertical="true"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/textView3"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="28dp"
         android:layout_above="@+id/button3"
         style="@android:style/Widget.Material.ListView" />
 

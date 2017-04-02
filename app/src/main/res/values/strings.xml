@@ -28,5 +28,7 @@
         <item>Go</item>
         <item>Clojure</item>
         <item>Swift</item>
+        <item>Objective-C</item>
+        <item>Assembly</item>
     </string-array>
 </resources>

@@ -8,6 +8,7 @@
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:colorButtonNormal">#2196f3</item>
         <item name="android:fontFamily">sans-serif</item>
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
     </style>
 
 

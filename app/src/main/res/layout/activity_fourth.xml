@@ -5,7 +5,7 @@
     android:id="@+id/activity_fourth"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="16dp"
+    android:paddingBottom="12dp"
     android:paddingLeft="32dp"
     android:paddingRight="32dp"
     android:clipToPadding="false"
@@ -15,8 +15,8 @@
         android:text="@string/info"
         android:layout_width="match_parent"
         android:layout_height="52dp"
-        android:layout_marginLeft="-32dp"
-        android:layout_marginRight="-32dp"
+        android:layout_marginLeft="-34dp"
+        android:layout_marginRight="-34dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:id="@+id/textView5"
@@ -31,7 +31,7 @@
         android:id="@+id/ilksayfa"
         android:background="@drawable/customtextbox"
         android:textSize="18sp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="24dp"
         android:layout_below="@+id/textView5"
         android:layout_alignParentStart="true" />
 
@@ -42,9 +42,8 @@
         android:layout_alignTop="@+id/ilksayfa"
         android:clickable="true"
         android:src="@android:drawable/ic_menu_edit"
-        android:layout_alignBottom="@+id/ilksayfa"
-        android:layout_alignStart="@+id/imageView2"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="12dp"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -63,9 +62,8 @@
         android:id="@+id/imageView2"
         android:clickable="true"
         android:layout_alignParentEnd="true"
-        android:layout_alignBottom="@+id/ikincisayfa"
         android:layout_alignTop="@+id/ikincisayfa"
-        android:layout_alignStart="@+id/imageView3" />
+        android:layout_marginTop="12dp"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -78,20 +76,17 @@
         android:layout_marginTop="12dp"
         android:layout_below="@+id/ikincisayfa"
         android:layout_alignParentStart="true"/>
-        <!--android:shadowColor="#7F000000"
-        android:shadowDx="1"                //bu calismadi shape'e ekledin!!!!
-        android:shadowDy="1"
-        android:shadowRadius="2"-->
+
 
     <ImageView
-        android:layout_width="24dp"
-        android:layout_height="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:src="@android:drawable/ic_menu_edit"
         android:id="@+id/imageView3"
         android:clickable="true"
-        android:layout_alignBottom="@+id/ucuncusayfa"
         android:layout_alignParentEnd="true"
-        android:layout_alignTop="@+id/ucuncusayfa" />
+        android:layout_alignTop="@+id/ucuncusayfa"
+        android:layout_marginTop="12dp"/>
 
 
 
