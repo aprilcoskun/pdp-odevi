@@ -14,7 +14,7 @@
         android:layout_height="52dp"
         android:text="@string/welcome"
         android:gravity="center"
-        android:background="@color/colorPrimary"
+        android:background="@color/material_purple"
         android:textColor="#ffff"
         android:textAppearance="@android:style/TextAppearance.Material.Title"
         android:textSize="20sp"
@@ -27,12 +27,14 @@
         android:inputType="textPersonName"
         android:ems="10"
         android:layout_below="@+id/textView"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="32dp"
         android:id="@+id/fnameEdit"
         android:layout_centerHorizontal="true"
         android:hint="@string/fname"
         app:met_floatingLabel="normal"
-        app:met_primaryColor="#2196f3"/>
+        app:met_primaryColor="@color/material_purple"
+        android:textSelectHandle="@color/material_orange"
+        android:textCursorDrawable="@color/material_orange"/>
 
     <com.rengwuxian.materialedittext.MaterialEditText
         android:layout_width="wrap_content"
@@ -45,7 +47,9 @@
         android:layout_alignStart="@+id/fnameEdit"
         android:hint="@string/lname"
         app:met_floatingLabel="normal"
-        app:met_primaryColor="#2196f3"/>
+        app:met_primaryColor="@color/material_purple"
+        android:textSelectHandle="@color/material_orange"
+        android:textCursorDrawable="@color/material_orange"/>
 
     <com.rengwuxian.materialedittext.MaterialEditText
         android:layout_width="wrap_content"
@@ -58,19 +62,21 @@
         android:layout_alignStart="@+id/lnameEdit"
         android:hint="@string/number"
         app:met_floatingLabel="normal"
-        app:met_primaryColor="#2196f3"/>
+        app:met_primaryColor="@color/material_purple"
+        android:textSelectHandle="@color/material_orange"
+        android:textCursorDrawable="@color/material_orange"/>
 
     <Button
         android:id="@+id/button"
-        style="@android:style/Widget.Material.Light.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/secondpage"
-        android:textColor="#FFFFFFFF"
+        android:textColor="#000000"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginBottom="24dp"
-        android:layout_marginEnd="24dp"/>
+        android:layout_marginBottom="6dp"
+        android:layout_marginEnd="12dp"
+        android:backgroundTint="#FF9800" />
 
 
 </RelativeLayout>

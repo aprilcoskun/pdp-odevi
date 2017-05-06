@@ -9,6 +9,8 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import java.util.ArrayList;
 
 public class ThirdActivity extends Activity {
@@ -22,20 +24,20 @@ public class ThirdActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_third);
-        CAsharedPref =   new SharedPref(getApplicationContext());
-        CAcheckedlangs =   new ArrayList<>();
+        CAsharedPref    =   new SharedPref(getApplicationContext());
+        CAcheckedlangs  =   new ArrayList<>();
 
         //ui setup
 
         setTitle(R.string.thirdpage);
-        CAlanglist =   (ListView)findViewById(R.id.langs);
-        CAlastpage =   (Button)findViewById(R.id.button3);
+        CAlanglist  =   (ListView)findViewById(R.id.langs);
+        CAlastpage  =   (Button)findViewById(R.id.button3);
 
 
         //list setup
 
         String[] AClangs =   getResources().getStringArray(R.array.diller);
-        ArrayAdapter<String> CA_adapter = new ArrayAdapter<String>(this, R.layout.listlayout,R.id.row, AClangs);
+        ArrayAdapter<String> CA_adapter = new ArrayAdapter<String>(this, R.layout.itemlayout,R.id.row, AClangs);
         CAlanglist.setAdapter(CA_adapter);
 
 
@@ -75,8 +77,11 @@ public class ThirdActivity extends Activity {
                     ACitems+="- "+AC_item+"\n";
                 }
                 CAsharedPref.saveLangs("\n"+ACitems);
-                //String AC_veriler = getIntent().getStringExtra("veriler")+"\n"+AC_items;
-                //Toast.makeText(ThirdActivity.this, AC_veriler, Toast.LENGTH_SHORT).show();
+
+                /*String ACveriler    =   CAsharedPref.loadFName() + "\n" + CAsharedPref.loadLName() + "\n" +
+                                        CAsharedPref.loadNumber() + "\n" + CAsharedPref.loadGender() + "\n" + CAsharedPref.loadLangs();
+                Toast.makeText(ThirdActivity.this, ACveriler, Toast.LENGTH_SHORT).show();*/
+
                 Intent intent = new Intent(ThirdActivity.this,FourthActivity.class);
                 startActivity(intent);
             }

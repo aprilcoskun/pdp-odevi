@@ -44,42 +44,28 @@ public class SharedPref {
 
     //save data
 
-     void saveFName(String AC_fname) {
-        CAeditor.putString("fname", AC_fname);
+     void saveFName(String ACfname) {
+        CAeditor.putString("fname", ACfname);
         CAeditor.apply();
     }
 
-     void saveLName(String AC_lname) {
-        CAeditor.putString("lname", AC_lname);
+     void saveLName(String AClname) {
+        CAeditor.putString("lname", AClname);
         CAeditor.apply();
     }
 
-     void saveNumber(int AC_number) {
-        CAeditor.putInt("number", AC_number);
+     void saveNumber(int ACnumber) {
+        CAeditor.putInt("number", ACnumber);
         CAeditor.apply();
     }
 
-     void saveGender(String AC_gender) {
-        CAeditor.putString("gender", AC_gender);
+     void saveGender(String ACgender) {
+        CAeditor.putString("gender", ACgender);
         CAeditor.apply();
     }
 
      void saveLangs(String AClangs) {
         CAeditor.putString("langs",AClangs);
-        CAeditor.apply();
-    }
-
-    //Ilk calistirmada deger ata
-
-      void firstRun(){
-        if(CAsharedPreferences.getBoolean("firstrun",true)){
-            CAeditor.putString("fname", "default");
-            CAeditor.putString("lname", "default");
-            CAeditor.putString("gender","default");
-            CAeditor.putString("langs", "Hiçbir dil bilmiyorsunuz!");
-            CAeditor.putInt("number", 0);
-            CAeditor.putBoolean("firstrun",false);
-        }
         CAeditor.apply();
     }
 }

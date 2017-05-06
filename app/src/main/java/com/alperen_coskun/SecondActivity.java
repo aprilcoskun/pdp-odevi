@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.Toast;
 
 public class SecondActivity extends Activity {
 
@@ -40,12 +41,14 @@ public class SecondActivity extends Activity {
         CAthirdpage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                CAselectedgender = (RadioButton) findViewById(CAgender.getCheckedRadioButtonId());
+                CAselectedgender    =   (RadioButton)findViewById(CAgender.getCheckedRadioButtonId());
                 CAsharedPref.saveGender(CAselectedgender.getText().toString());
-                //String ACveriler = getIntent().getStringExtra("veriler")+"\n"+ CAsharedPref.Loadgender();
-                //Toast.makeText(SecondActivity.this,ACveriler,Toast.LENGTH_SHORT).show();
+
+                /*String ACveriler    =   CAsharedPref.loadFName() + "\n" + CAsharedPref.loadLName() + "\n" +
+                                        CAsharedPref.loadNumber() + "\n" + CAsharedPref.loadGender();
+                Toast.makeText(SecondActivity.this,ACveriler,Toast.LENGTH_SHORT).show();*/
+
                 Intent intent = new Intent(SecondActivity.this,ThirdActivity.class);
-                //intent.putExtra("veriler",ACveriler);
                 startActivity(intent);
             }
         });

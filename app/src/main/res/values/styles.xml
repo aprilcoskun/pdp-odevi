@@ -3,13 +3,11 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="android:Theme.Material.Light.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
-        <item name="android:colorButtonNormal">#2196f3</item>
+        <item name="colorPrimary">@color/material_purple</item>
+        <item name="colorPrimaryDark">@color/material_purple2</item>
+        <item name="colorAccent">@color/material_orange</item>
         <item name="android:fontFamily">sans-serif</item>
-        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+        <item name="android:statusBarColor">@color/material_purple2</item>
     </style>
-
 
 </resources>

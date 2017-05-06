@@ -1,5 +1,4 @@
 <resources>
-    <!-- bunların hepsi burda çünkü best practice-->
 
     <string name="app_name">alperen_coskun</string>
     <string name="welcome">Hoşgeldiniz</string>
@@ -31,4 +30,9 @@
         <item>Objective-C</item>
         <item>Assembly</item>
     </string-array>
+
+    <color name="material_purple">#9C27B0</color>
+    <color name="material_purple2">#8E24AA</color>
+    <color name="material_orange">#FF9800</color>
+
 </resources>

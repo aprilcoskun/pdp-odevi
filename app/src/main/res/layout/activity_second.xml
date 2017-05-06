@@ -15,7 +15,7 @@
         android:layout_centerHorizontal="true"
         android:id="@+id/textView2"
         android:gravity="center"
-        android:background="@color/colorPrimary"
+        android:background="@color/material_purple"
         android:textColor="#ffff"/>
 
     <RadioGroup
@@ -29,18 +29,20 @@
             android:id="@+id/erkek"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="72dp"
+            android:layout_marginTop="80dp"
             android:checked="true"
             android:text="@string/male"
-            android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+            android:textAppearance="@android:style/TextAppearance.Material.Medium"
+            android:buttonTint="@color/material_purple"/>
 
-    <RadioButton
-        android:text="@string/female"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:id="@+id/kadin"
-        android:textAppearance="@android:style/TextAppearance.Material.Medium"/>
+        <RadioButton
+            android:id="@+id/kadin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/female"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium"
+            android:buttonTint="@color/material_purple"/>
     </RadioGroup>
 
     <Button
@@ -48,8 +50,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/button2"
-        style="@android:style/Widget.Material.Button"
-        android:textColor="#FFFFFFFF"
+        android:backgroundTint="@color/material_orange"
+        android:textColor="#000000"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:layout_marginBottom="24dp"

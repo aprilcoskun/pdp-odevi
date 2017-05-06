@@ -22,7 +22,6 @@ public class FirstActivity extends Activity {
         setContentView(R.layout.activity_first);
 
         CAsharedPref = new SharedPref(getApplicationContext());
-        CAsharedPref.firstRun();
 
         //ui setup
 
@@ -34,13 +33,11 @@ public class FirstActivity extends Activity {
 
         //check db
 
-        if(!CAsharedPref.loadFName().equals("default"))
             CAfname.setText(CAsharedPref.loadFName());
 
-        if(!CAsharedPref.loadLName().equals("default"))
             CAlname.setText(CAsharedPref.loadLName());
 
-        if(!(CAsharedPref.loadNumber()==0))
+        if(CAsharedPref.loadNumber() != 0)
             CAnumber.setText(String.valueOf(CAsharedPref.loadNumber()));
 
         //listeners
@@ -56,14 +53,16 @@ public class FirstActivity extends Activity {
                     CAsharedPref.saveFName(CAfname.getText().toString());
                     CAsharedPref.saveLName(CAlname.getText().toString());
                     CAsharedPref.saveNumber(Integer.parseInt(CAnumber.getText().toString()));
-                    //String AC_veriler = CAfname.getText().toString()+" "+ CAlname.getText().toString()+"\n"+ CAnumber.getText().toString();
-                    //Toast.makeText(FirstActivity.this,AC_veriler,Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(FirstActivity.this,SecondActivity.class);
-                    //intent.putExtra("veriler",AC_veriler);
+
+                   /* String ACveriler    =   CAsharedPref.loadFName() + "\n" + CAsharedPref.loadLName() + "\n" + CAsharedPref.loadNumber();
+                    Toast.makeText(FirstActivity.this,ACveriler,Toast.LENGTH_SHORT).show();*/
+
                     startActivity(intent);
                 }
             }
         });
+
     }
 
 
