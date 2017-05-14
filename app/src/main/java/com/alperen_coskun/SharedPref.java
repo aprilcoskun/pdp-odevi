@@ -20,7 +20,7 @@ public class SharedPref {
         CAeditor = CAsharedPreferences.edit();
     }
 
-    //load  data
+    //load data
 
      String loadFName() {
             return CAsharedPreferences.getString("fname","");

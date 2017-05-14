@@ -37,7 +37,7 @@ public class ThirdActivity extends Activity {
         //list setup
 
         String[] AClangs =   getResources().getStringArray(R.array.diller);
-        ArrayAdapter<String> CA_adapter = new ArrayAdapter<String>(this, R.layout.itemlayout,R.id.row, AClangs);
+        ArrayAdapter<String> CA_adapter = new ArrayAdapter<String>(this, R.layout.itemlayout,R.id.item_row, AClangs);
         CAlanglist.setAdapter(CA_adapter);
 
 
@@ -72,11 +72,17 @@ public class ThirdActivity extends Activity {
         CAlastpage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String ACitems="";
-                for (String AC_item: CAcheckedlangs) {
-                    ACitems+="- "+AC_item+"\n";
+                String ACitems="Bildiğiniz Diller:\n";
+                if(CAcheckedlangs.isEmpty()) {
+                    ACitems = "Lütfen bir dil öğrenin!";
                 }
-                CAsharedPref.saveLangs("\n"+ACitems);
+                else {
+                    for (String AC_item: CAcheckedlangs) {
+                        ACitems+=" "+AC_item+"\n";
+                    }
+                }
+
+                CAsharedPref.saveLangs(ACitems);
 
                 /*String ACveriler    =   CAsharedPref.loadFName() + "\n" + CAsharedPref.loadLName() + "\n" +
                                         CAsharedPref.loadNumber() + "\n" + CAsharedPref.loadGender() + "\n" + CAsharedPref.loadLangs();

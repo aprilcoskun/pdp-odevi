@@ -13,21 +13,25 @@ public class ResizeAnimation extends Animation {
     private View CAview;
     private int ACstartHeight;
 
+    //constructor
+
     public ResizeAnimation(View CAview, int ACtargetHeight, int ACstartHeight) {
         this.CAview = CAview;
         this.ACtargetHeight = ACtargetHeight;
         this.ACstartHeight = ACstartHeight;
     }
 
-    @Override
+    //@Override
     protected void applyTransformation(float ACinterpolatedTime, Transformation CAt) {
-        int newHeight = (int) (ACstartHeight + ACtargetHeight * ACinterpolatedTime);
-        //int newHeight = (int) (ACstartHeight+(ACtargetHeight - ACstartHeight) * ACinterpolatedTime);
-        CAview.getLayoutParams().height = newHeight;
+        int ACnewHeight = (int) (ACstartHeight + ACtargetHeight * ACinterpolatedTime);
+
+        CAview.getLayoutParams().height = ACnewHeight;
+        CAview.invalidate();
+
         CAview.requestLayout();
     }
 
-    @Override
+    /*@Override
     public void initialize(int ACwidth, int ACheight, int ACparentWidth, int ACparentHeight) {
         super.initialize(ACwidth, ACheight, ACparentWidth, ACparentHeight);
     }
@@ -35,5 +39,5 @@ public class ResizeAnimation extends Animation {
     @Override
     public boolean willChangeBounds() {
         return true;
-    }
+    }*/
 }

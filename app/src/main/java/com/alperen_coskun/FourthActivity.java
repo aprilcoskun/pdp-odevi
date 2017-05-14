@@ -39,9 +39,9 @@ public class FourthActivity extends Activity {
         CAsecondpage    =   (ImageView)findViewById(R.id.imageView2);
         CAthirdpage     =   (ImageView)findViewById(R.id.imageView3);
 
-        ResizeAnimation CAanim  =   new ResizeAnimation(CAfirstcard, 330, 100);
+        ResizeAnimation CAanim  =   new ResizeAnimation(CAfirstcard, 300, 100);
         ResizeAnimation CAanim2 =   new ResizeAnimation(CAsecondcard, 120, 100);
-        ResizeAnimation CAanim3 =   new ResizeAnimation(CAthirdcard, 780, 100);
+        ResizeAnimation CAanim3 =   new ResizeAnimation(CAthirdcard, 842, 100);
 
         CAanim.setDuration(1000);
         CAanim2.setDuration(1000);
