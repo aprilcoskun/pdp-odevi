@@ -33,9 +33,9 @@ public class FirstActivity extends Activity {
 
         //check db
 
-            CAfname.setText(CAsharedPref.loadFName());
+            CAfname.append(CAsharedPref.loadFName());
 
-            CAlname.setText(CAsharedPref.loadLName());
+            CAlname.append(CAsharedPref.loadLName());
 
         if(CAsharedPref.loadNumber() != 0)
             CAnumber.setText(String.valueOf(CAsharedPref.loadNumber()));

@@ -31,7 +31,7 @@ public class ResizeAnimation extends Animation {
         CAview.requestLayout();
     }
 
-    /*@Override
+    @Override
     public void initialize(int ACwidth, int ACheight, int ACparentWidth, int ACparentHeight) {
         super.initialize(ACwidth, ACheight, ACparentWidth, ACparentHeight);
     }
@@ -39,5 +39,5 @@ public class ResizeAnimation extends Animation {
     @Override
     public boolean willChangeBounds() {
         return true;
-    }*/
+    }
 }

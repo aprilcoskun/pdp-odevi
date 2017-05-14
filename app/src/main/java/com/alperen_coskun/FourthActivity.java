@@ -25,7 +25,6 @@ public class FourthActivity extends Activity {
 
         //ui setup
 
-
         setTitle(R.string.lastpage);
         CAfirstcard     =   (CardView)findViewById(R.id.card0);
         CAsecondcard    =   (CardView)findViewById(R.id.card1);
@@ -53,9 +52,9 @@ public class FourthActivity extends Activity {
 
         //check db
 
-        CAfirstdata.setText("\n "+ CAsharedPref.loadFName()+" "+ CAsharedPref.loadLName()+"\n\n "+ CAsharedPref.loadNumber()+" \n");
-        CAseconddata.setText("\n"+CAsharedPref.loadGender()+"\n");
-        CAthirddata.setText(CAsharedPref.loadLangs());
+        CAfirstdata.append("\n "+ CAsharedPref.loadFName()+" "+ CAsharedPref.loadLName()+"\n\n "+ CAsharedPref.loadNumber()+" \n");
+        CAseconddata.append("\n"+CAsharedPref.loadGender()+"\n");
+        CAthirddata.append(CAsharedPref.loadLangs());
 
         //scroll method for long lang list
 
